@@ -176,15 +176,41 @@ users_data
 
 Bien:
 
-Users
-Orders
-Products
+User
+Product
+Order
 
 Las tablas y columnas deben seguir **convenciones de nombres consistentes**.
 
 ---
 
-## 2. Usar datos naturales como llaves primarias
+## 2. Usar nombres en singular o plural de forma inconsistente
+
+Mal:
+
+```text
+User
+Products
+orders
+```
+
+Bien:
+
+```text
+User
+Product
+Order
+```
+
+Preferiblemente, utiliza **nombres en singular** para las tablas, ya que cada fila (tupla) representa una instancia de esa entidad.
+
+Si se decide utilizar nombres en plural, también es válido, pero **debe mantenerse la misma convención en toda la base de datos**.
+
+> Lo importante no es tanto elegir singular o plural, sino mantener una convención consistente.
+
+---
+
+## 3. Usar datos naturales como llaves primarias
 
 Incorrecto:
 
@@ -198,7 +224,7 @@ Los datos naturales pueden cambiar, pero los IDs permanecen estables.
 
 ---
 
-## 3. Crear tablas que intentan representar múltiples entidades
+## 4. Crear tablas que intentan representar múltiples entidades
 
 Ejemplo:
 
@@ -210,7 +236,7 @@ Las entidades deben representar **un solo concepto del mundo real**.
 
 ---
 
-## 4. Diseñar tablas sin entender primero el dominio
+## 5. Diseñar tablas sin entender primero el dominio
 
 Una base de datos no debería diseñarse solamente a partir del código de la aplicación.
 
@@ -224,7 +250,7 @@ Después se crean las tablas.
 
 ---
 
-## 5. Ignorar consideraciones de indexación
+## 6. Ignorar consideraciones de indexación
 
 Incluso tablas bien diseñadas pueden volverse lentas sin índices adecuados.
 
