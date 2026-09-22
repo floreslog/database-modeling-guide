@@ -173,7 +173,33 @@ Tables and columns should follow **consistent naming conventions**.
 
 ---
 
-## 2. Using natural data as primary keys
+## 2. Use singular or plural names inconsistently
+
+Bad:
+
+```text
+User
+Products
+orders
+```
+
+Good:
+
+```text
+User
+Product
+Order
+```
+
+Preferably, use **singular names** for tables, since each row (tuple) represents an instance of that entity.
+
+Using plural names is also valid, but **the same convention should be followed consistently throughout the entire database**.
+
+> What matters most is not whether you choose singular or plural, but maintaining a consistent naming convention.
+
+---
+
+## 3. Using natural data as primary keys
 
 Incorrect:
 
@@ -187,7 +213,7 @@ Natural data can change, but IDs remain stable.
 
 ---
 
-## 3. Creating tables that try to represent multiple entities
+## 4. Creating tables that try to represent multiple entities
 
 Example:
 
@@ -199,7 +225,7 @@ Entities should represent **one real-world concept**.
 
 ---
 
-## 4. Designing tables before understanding the domain
+## 5. Designing tables before understanding the domain
 
 A database should not be designed only from the application code.
 
@@ -213,7 +239,7 @@ Then create tables.
 
 ---
 
-## 5. Ignoring indexing considerations
+## 6. Ignoring indexing considerations
 
 Even well designed tables can become slow without proper indexes.
 
