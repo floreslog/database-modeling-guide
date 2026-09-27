@@ -11,8 +11,6 @@ Esta guía explica un método simple para diseñar bases de datos relacionales p
 
 El objetivo es evitar redundancia, mantener consistencia y producir estructuras de bases de datos limpias.
 
-Este documento fue creado originalmente para un **concurso universitario de diseño de bases de datos**.
-
 ---
 
 ---
