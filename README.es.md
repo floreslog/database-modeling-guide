@@ -13,8 +13,6 @@ El objetivo es evitar redundancia, mantener consistencia y producir estructuras 
 
 ---
 
----
-
 ## Tabla de Contenidos
 
 * [Algoritmo de los 6 Pasos](#algoritmo-de-seis-pasos)
