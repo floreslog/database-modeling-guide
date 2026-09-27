@@ -11,10 +11,6 @@ This guide explains a simple method to design relational databases for **academi
 
 The goal is to avoid redundancy, maintain consistency, and produce clean database structures.
 
-This document was originally created for a **database design competition at university**.
-
----
-
 ---
 
 ## Table of Contents
