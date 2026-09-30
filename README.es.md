@@ -227,14 +227,12 @@ El problema aparece cuando una misma tabla intenta almacenar los datos propios d
 
 Por ejemplo:
 
-EmployeeCustomer
-----------------
-employee_id
-employee_name
-employee_department
-customer_id
-customer_name
-customer_address
+| EmpoyeeCustomer | 
+| ------------    | 
+| employee_id     | 
+| employee_name   | 
+| customer_id     | 
+| customer_name   | 
 
 Esta tabla mezcla los datos de Employee y Customer. Esto puede provocar redundancia, anomalías de actualización y dificultades para mantener la integridad de los datos.
 
