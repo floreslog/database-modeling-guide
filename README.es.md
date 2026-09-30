@@ -220,15 +220,23 @@ Los datos naturales pueden cambiar, pero los IDs permanecen estables.
 
 ---
 
-## 4. Crear tablas que intentan representar múltiples entidades
+## 4. Mezclar múltiples entidades en una sola tabla
+Cada tabla debe representar claramente un concepto del dominio o, cuando corresponda, una relación entre conceptos.
 
-Ejemplo:
+El problema aparece cuando una misma tabla intenta almacenar los datos propios de varias entidades independientes.
+
+Por ejemplo:
 
 EmployeeCustomer
+----------------
+employee_id
+employee_name
+employee_department
+customer_id
+customer_name
+customer_address
 
-Esto indica que dos entidades diferentes fueron mezcladas en una sola tabla.
-
-Las entidades deben representar **un solo concepto del mundo real**.
+Esta tabla mezcla los datos de Employee y Customer. Esto puede provocar redundancia, anomalías de actualización y dificultades para mantener la integridad de los datos.
 
 ---
 
