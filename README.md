@@ -209,15 +209,21 @@ Natural data can change, but IDs remain stable.
 
 ---
 
-## 4. Creating tables that try to represent multiple entities
+## 4. Mezclar múltiples entidades en una sola tabla
+Each table should clearly represent a single concept in the domain or, when appropriate, a relationship between concepts.
 
-Example:
+The problem arises when a single table attempts to store data belonging to multiple independent entities.
 
-EmployeeCustomer
+For example:
 
-This indicates two different entities were mixed into one table.
+| EmpoyeeCustomer | 
+| ------------    | 
+| employee_id     | 
+| employee_name   | 
+| customer_id     | 
+| customer_name   | 
 
-Entities should represent **one real-world concept**.
+This table mixes data from Employee and Customer. This can lead to data redundancy, update anomalies, and difficulties in maintaining data integrity.
 
 ---
 
