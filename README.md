@@ -209,7 +209,7 @@ Natural data can change, but IDs remain stable.
 
 ---
 
-## 4. Mezclar múltiples entidades en una sola tabla
+## 4. Mixing Multiple Entities into a Single Table
 Each table should clearly represent a single concept in the domain or, when appropriate, a relationship between concepts.
 
 The problem arises when a single table attempts to store data belonging to multiple independent entities.
